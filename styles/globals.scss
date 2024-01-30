@@ -2,10 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    background-color: #fff;
+    color: #000;
+}
 
 section {
     display: flex;
+    max-height: 100%;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    margin: 25px;
+    padding: 35px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    overflow: auto;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+tr {
+    cursor: pointer;
+    &:hover {
+        background-color: lightcoral;
+        color: azure;
+    }   
 }
