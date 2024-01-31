@@ -23,8 +23,12 @@ section {
 
 tr {
     cursor: pointer;
+
+    &:nth-child(even) {
+        background-color: lightgray;
+    }
     &:hover {
         background-color: lightcoral;
         color: azure;
-    }   
+    }
 }

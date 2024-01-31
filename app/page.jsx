@@ -1,5 +1,5 @@
 import { getServerList } from "@/apis";
-import { Modal } from "./components/EditingModal";
+import { Modal } from "./components/Modal";
 import { ServerList } from "./components/ServersList";
 import '@/styles/globals.scss'
 
@@ -11,8 +11,8 @@ export default async function Home() {
       <section className="w-[40%]">
         <ServerList listOfServers = {listOfServers}/>
       </section>
-      <section className="w-full bg-gray-200">
-        <Modal />
+      <section className="w-full bg-gray-200 flex flex-col justify-center items-center">
+        <h1 className="text-4xl text-gray-400">Click on server to edit</h1>
       </section>
     </main>
   );

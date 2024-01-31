@@ -1,14 +1,18 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
+import { Modal } from './Modal';
 
 export const ServerList = ({listOfServers}) => {
+  
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <div>
-      <h1 className='text-xl'>Customer Server List</h1>
+      <h1 className='text-2xl'>Customer Server List</h1>
       <div className='mt-8'>
             <table className="table">
                 <thead>
-                    <tr className='cursor-default pointer-events-none'>
+                    <tr className=' bg-slate-400 text-white cursor-default pointer-events-none'>
                         <th>Customer ID</th>
                         <th>Server Name</th>
                         <th>Server Type</th>
@@ -27,6 +31,8 @@ export const ServerList = ({listOfServers}) => {
                   })}
                 </tbody>
             </table>
+            <button onClick={() => setModalOpen(true)} className='btn'>Add Server</button>
+            <Modal modalOpen = {modalOpen} setModalOpen={setModalOpen}/>
         </div>
     </div>
   )
