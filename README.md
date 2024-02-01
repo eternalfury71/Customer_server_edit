@@ -42,3 +42,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 Использовал cache: no-store в запросе получения списка серверов, чтобы при каждом fetch получать свежие данные
 
+Чтобы открыть проект в dev 
+1) npm i
+2) npm run json-server
+3) npm run dev
+
+Готово!
+
