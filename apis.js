@@ -4,7 +4,19 @@ const baseUrl = 'http://localhost:3001';
 
 
 export const getServerList = async () => {
-    const res = await fetch(`${baseUrl}/servers`);
+    const res = await fetch(`${baseUrl}/servers`, {cache: 'no-store'});
     const serversList = await res.json();
     return serversList;
+}
+
+export const addNewServer = async (server) => {
+    const res = await fetch(`${baseUrl}/servers`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(server)
+    });
+    const newServer = res.json();
+    return newServer;
 }

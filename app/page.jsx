@@ -1,10 +1,10 @@
 import { getServerList } from "@/apis";
-import { Modal } from "./components/Modal";
 import { ServerList } from "./components/ServersList";
 import '@/styles/globals.scss'
 
 export default async function Home() {
   const listOfServers = await getServerList();
+
 
   return (
     <main className="w-full h-screen flex">

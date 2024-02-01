@@ -1,19 +1,29 @@
 {
-    "servers": [
-        {
-            "customer_id": "1",
-            "server_name" : "server7",
-            "server_type": "vds"
-        },
-        {
-            "customer_id": "2",
-            "server_name" : "server2",
-            "server_type": "dedicated"
-        },
-        {
-            "customer_id": "3",
-            "server_name" : "server4",
-            "server_type": "hosting"
-        }
-    ]
+  "servers": [
+    {
+      "id": "1",
+      "server_name": "server7",
+      "server_type": "vds"
+    },
+    {
+      "id": "2",
+      "server_name": "server2",
+      "server_type": "dedicated"
+    },
+    {
+      "id": "3",
+      "server_name": "server4",
+      "server_type": "hosting"
+    },
+    {
+      "id": "2f71652c-0ac3-4619-82c4-34db7ece1473",
+      "server_name": "asdasdsada",
+      "server_type": "Dedicated"
+    },
+    {
+      "id": "3e54c1a3-a8c7-461c-9d37-9fba33406c2b",
+      "server_name": "Server5",
+      "server_type": "Vds"
+    }
+  ]
 }
