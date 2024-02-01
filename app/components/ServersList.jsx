@@ -10,11 +10,12 @@ export const ServerList = ({listOfServers}) => {
     <div className='w-full'>
       <h1 className='text-2xl'>Customer Server List</h1>
       <div className='mt-8'>
-            <table className="table ">
-                <thead>
-                    <tr className=' bg-slate-400 text-white cursor-default pointer-events-none'>
+            <table className="table">
+                <thead className='bg-slate-400 w-full'>
+                    <tr className='text-white cursor-default pointer-events-none w-full'>
                         <th>Server Name</th>
                         <th>Server Type</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -25,7 +26,6 @@ export const ServerList = ({listOfServers}) => {
             </table>
             <AddServer />
         </div>
-        {/* <Modal modalOpen = {modalOpen} setModalOpen={setModalOpen}/> */}
     </div>
   )
 }

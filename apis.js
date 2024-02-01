@@ -20,3 +20,15 @@ export const addNewServer = async (server) => {
     const newServer = res.json();
     return newServer;
 }
+
+export const editServer = async (server) => {
+    const res = await fetch(`${baseUrl}/servers/${server.id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(server)
+    });
+    const editedServer = res.json();
+    return editedServer;
+}

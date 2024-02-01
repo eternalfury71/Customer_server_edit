@@ -4,7 +4,7 @@ import '@/styles/globals.scss'
 
 export default async function Home() {
   const listOfServers = await getServerList();
-
+  console.log(listOfServers);
 
   return (
     <main className="w-full h-screen flex">
