@@ -1,24 +1,19 @@
 {
   "servers": [
     {
-      "id": "1",
-      "server_name": "EDITED!",
+      "id": "3",
+      "server_name": "server-1",
+      "server_type": "Vds"
+    },
+    {
+      "id": "e2cc385f-d5f7-492c-ae05-bd902e06dcc6",
+      "server_name": "server-2",
       "server_type": "Dedicated"
     },
     {
-      "id": "2",
-      "server_name": "asdasdd",
+      "id": "ee855a74-fd2a-4d4e-886d-feaa4c463d5d",
+      "server_name": "server-1",
       "server_type": "Hosting"
-    },
-    {
-      "id": "3",
-      "server_name": "bbbb",
-      "server_type": "Vds"
-    },
-    {
-      "id": "17744def-4379-4711-aab5-d7f02b797a19",
-      "server_name": "abc",
-      "server_type": "Vds"
     }
   ]
 }

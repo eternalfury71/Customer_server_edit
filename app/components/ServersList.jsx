@@ -20,7 +20,7 @@ export const ServerList = ({listOfServers}) => {
                 </thead>
                 <tbody>
                   {listOfServers.map((server) => (
-                    <Server key={server.id} server = {server} />
+                    <Server server = {server} />
                   ))}
                 </tbody>
             </table>

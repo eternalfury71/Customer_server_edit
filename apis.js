@@ -32,3 +32,9 @@ export const editServer = async (server) => {
     const editedServer = res.json();
     return editedServer;
 }
+
+export const deleteServer = async (id) => {
+    const res = await fetch(`${baseUrl}/servers/${id}`, {
+        method: 'DELETE',
+    });
+}

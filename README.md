@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
@@ -33,4 +33,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details. -->
+Использовал библиотеку json-server для создания фейкового REST API
+
+В apis.js реализованы все запросы
+
+С левой стороны страницы сверстал список серверов в виде таблицы и иконок для редактирования и удаления при нажати. Чуть ниже кнопка для добавления нового сервера. При нажатии на кнопку открывается модальное окно справа где можно задать(input) название и тип сервера на выбор(select). Можно сохранить и отменить действие, при сохранении делаем пост запрос и добавляем наш сервер. Чтобы сервер появлялся без перезагрузки страницы использовал useRouter
+
+Использовал cache: no-store в запросе получения списка серверов, чтобы при каждом fetch получать свежие данные
+

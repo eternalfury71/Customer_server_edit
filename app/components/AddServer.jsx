@@ -46,9 +46,9 @@ export const AddServer = () => {
             <Modal Modal modalOpen={modalOpen} setModalOpen={setModalOpen}>
             <form onSubmit={handleSubmitAddServer} className='w-[500px] my-12 h-full bg-white rounded-xl flex flex-col justify-center items-center gap-8'>
                     <h1 className='text-2xl mb-12'>Create New Server</h1>
-                    <input onChange = {handleChangeAddServer} value={newServerNameVal} maxLength={10} type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" required/>
+                    <input onChange = {handleChangeAddServer} value={newServerNameVal} maxLength={10} type="text" placeholder="Type here" className="bg-white input input-bordered w-full max-w-xs" required/>
 
-                    <select className="select select-bordered w-full max-w-xs"
+                    <select className="bg-white select select-bordered w-full max-w-xs"
                             onFocus={() => setSelectOpen(true)}
                             onBlur={() => setSelectOpen(false)}
                             onChange={handleSelectChange}
